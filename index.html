@@ -4,15 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>Card Component</title>
   </head>
   <body>
     <div class="card">
       <header class="card__header">
-        <img class="card__image" src="images/image-equilibrium.jpg" alt="" />
+        <img
+          class="card__header-img"
+          src="images/image-equilibrium.jpg"
+          alt=""
+        />
       </header>
-      <div class="card__body"></div>
+      <div class="card__body">
+        <h1 class="card__body-title">Equilibrium #3429</h1>
+        <p class="card__body-text">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="badge-container">
+          <div class="badge">
+            <img
+              class="badge__icon--eth"
+              src="images/icon-ethereum.svg"
+              alt=""
+            />
+            <p class="badge__text text--eth">0.041 ETH</p>
+          </div>
+          <div class="badge">
+            <img
+              class="badge__icon--clock"
+              src="images/icon-clock.svg"
+              alt=""
+            />
+            <p class="badge__text text--clock">3 days left</p>
+          </div>
+        </div>
+      </div>
+      <footer class="card__footer">
+        <img class="card__footer-img" src="images/image-avatar.png" alt="" />
+        <p class="card__footer-text">
+          Creation of <span class="card__footer-name">Jules Wyvern</span>
+        </p>
+      </footer>
     </div>
   </body>
 </html>
