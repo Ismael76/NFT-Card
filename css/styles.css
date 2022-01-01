@@ -1,20 +1,16 @@
+html {
+  font-size: 62.5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-color: hsl(217, 54%, 11%);
   font-family: "Outfit", sans-serif;
   line-height: 1.5;
 }
-
-/* Fonts */
-
-html {
-  font-size: 62.5%;
-}
-
-/* Colours  */
-
-/* body {
-  background: hsl(217, 54%, 11%);
-} */
 
 /* Badge */
 
@@ -67,11 +63,29 @@ html {
 }
 
 .card__header {
+  position: relative;
 }
 
 .card__header-img {
   width: 100%;
   border-radius: 10px;
+}
+
+.view-icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 40%;
+  opacity: 0;
+}
+
+.card__header-img:hover + .view-icon {
+  opacity: 1;
+}
+
+.card__header-img:hover {
+  filter: opacity(0.5) drop-shadow(0 0 0 hsl(178, 100%, 50%));
+  cursor: pointer;
 }
 
 .card__body {
@@ -84,6 +98,11 @@ html {
 .card__body-title {
   color: white;
   font-weight: 600;
+}
+
+.card__body-title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
 
 .card__body-text {
@@ -115,4 +134,9 @@ html {
 
 .card__footer-name {
   color: cornsilk;
+}
+
+.card__footer-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
 }
